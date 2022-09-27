@@ -67,6 +67,7 @@ float: right;
   .content {
     clear: both;
     grid-area: content;
+    font-size: 1rem;
   }
 
   .sidebar , .main_menu{
@@ -75,6 +76,7 @@ float: right;
   }
   .sidebar {
     grid-area: sidebar;
+    /* max-height: 40mm; */
   }
 
   .box-1 {
@@ -510,7 +512,7 @@ article video {
           font-size: 1rem;
         }
             }
-      @media (max-width: 56.25em) {
+      @media (max-width: 1000px) {
         .container {
           display: grid;
           grid-template-areas:
@@ -521,19 +523,54 @@ article video {
         } 
         .information-box{
           font-size: 0.8rem;
-        }}
-      @media (max-width: 37.5em) {
+        }
+
+        .menu-list{
+          clear: both;
+          display: inline-block;
+        }
+        .menu-list li{
+          clear: both;
+          text-align: left;
+          display: block;
+        }
+
+        .menu-list li a{
+          clear: both;
+          text-align: left;
+          display: block;
+        }
+      
+        .dropdown-content{
+          display: block;
+          position: static;
+        }
+      
+      }
+      @media (max-width: 700px) {
         .container {
           display: grid;
           grid-template-areas:
-          'header header header header header'
-          'main_menu content content content sidebar'
-          'footer footer footer footer footer';
+          'header header header header'
+          'main_menu content content content'
+          'main_menu content content content'
+          'sidebar sidebar sidebar sidebar'
+          'footer footer footer footer';
         grid-gap: 0;
         } 
         .information-box{
           font-size: 0.6rem;
         } 
+
+        .sidebar{
+          /* max-height: 100mm;
+          height: 100mm; */
+          /* margin-top: 2px; */
+
+          /* background-color: white; */
+          border: 2px solid #9f709f;
+        }
+      
 
         .menu-list{
           clear: both;
@@ -559,5 +596,121 @@ article video {
        
       
       }
+
+
+
+      
+      @media (max-width: 400px) {
+        .container {
+          display: grid;
+          grid-template-areas:
+          'header'
+          'main_menu'
+          'content'
+          'sidebar'
+          'footer';
+        grid-gap: 0;
+        } 
+        .information-box{
+          font-size: 0.6rem;
+        } 
+
+        .sidebar{
+          /* max-height: 100mm;
+          height: 100mm; */
+          /* margin-top: 2px; */
+
+          /* background-color: white; */
+          border: 2px solid #9f709f;
+        }
+      
+
+        .menu-list{
+          clear: both;
+          /* display: inline-block; */
+          display: flex;
+          flex-direction: column;
+        }
+        .menu-list li{
+          clear: both;
+          text-align: left;
+          display: block;
+        }
+
+        .menu-list li a{
+          clear: both;
+          text-align: left;
+          display: block;
+        }
+      
+        .dropdown-content{
+          display: block;
+          position: static;
+        }
+
+       
+      
+      }
+
+
+
+      @media (max-width: 300px) {
+        .container {
+          display: grid;
+          grid-template-areas:
+          'header'
+          'main_menu'
+          'content'
+          'sidebar'
+          'footer';
+        grid-gap: 0;
+        } 
+        .information-box{
+          font-size: 0.6rem;
+        } 
+
+        .sidebar{
+          /* max-height: 100mm;
+          height: 100mm; */
+          /* margin-top: 2px; */
+
+          /* background-color: white; */
+          border: 2px solid #9f709f;
+        }
+      
+
+        .menu-list{
+          clear: both;
+          /* display: inline-block; */
+          display: flex;
+          flex-direction: column;
+        }
+        .menu-list li{
+          clear: both;
+          text-align: left;
+          display: block;
+        }
+
+        .menu-list li a{
+          clear: both;
+          text-align: left;
+          display: block;
+        }
+      
+        .dropdown-content{
+          display: block;
+          position: static;
+        }
+
+        .navbar{
+          clear: both;
+          display: flex;
+          flex-direction: column;
+        }
+
+       
+      
+      }
+
 
 
